@@ -1,0 +1,13 @@
+.footer-wrapper {
+  .navbar-expand {
+    justify-content: space-between;
+  }
+
+  .social-wrapper {
+    display: flex;
+
+    i {
+      color: $primary-honey;
+    }
+  }
+}
