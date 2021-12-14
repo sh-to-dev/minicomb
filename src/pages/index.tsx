@@ -2,11 +2,11 @@ import * as React from "react";
 import {
   Container,
   Row,
-  Col,
-  Nav,
-  Navbar,
-  Image
+  Col
 } from 'react-bootstrap';
+
+import Hero from "../components/misc/Hero";
+import FeatureTile from "../components/feature/FeatureTile";
 
 import "../index.scss";
 import Layout from '../layout/Layout';
@@ -19,8 +19,21 @@ const IndexPage = () => {
         <Container>
           <Row>
             <Col>
-              {/* going to put each compoent in here sperated by containers and rows  */}
+              <Hero />
             </Col>
+          </Row>
+          <Row>
+          <Row className="page-section">
+            <Col md={4}>
+              <FeatureTile imgName="feature1" title="Feature One" about="Feature Feature Feature"/>
+            </Col>
+            <Col md={4}>
+              <FeatureTile imgName="feature2" title="Feature Two" about="Feature Feature Feature"/>
+            </Col>
+            <Col md={4}>
+              <FeatureTile imgName="feature3" title="Feature Three" about="Feature Feature Feature"/>
+            </Col>
+          </Row>
           </Row>
         </Container>
       </main>

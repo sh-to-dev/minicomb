@@ -10,4 +10,10 @@ html {
 body,
 main {
   background-color: $background;
+  margin-bottom: 48px;
+
+  .page-section {
+    margin-top: 75px;
+  }
 }
+

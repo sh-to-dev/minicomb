@@ -19,10 +19,10 @@ const Layout = ({ children }: Props) => {
               <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
               {/* Icons */}
-              <script src="https://kit.fontawesome.com/4eeeb847a9.js" crossorigin="anonymous"></script>
+              <script src="https://kit.fontawesome.com/83f451a6c5.js" crossorigin="anonymous"></script>
 
               {/* Title */}
-              <title>Caravan</title>
+              <title>minicomb</title>
           </Helmet>
           <PrimaryNav />
           {children}

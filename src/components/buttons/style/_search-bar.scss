@@ -1,0 +1,11 @@
+.search-bar {
+  height: 100%;
+  max-height: 36px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  border-radius: 40px;
+
+  .input-group {
+    height: 36px;
+  }
+}
