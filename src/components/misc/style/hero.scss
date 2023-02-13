@@ -1,3 +1,68 @@
 .hero {
   padding: 0;
+  margin: 136px 0;
+
+  .row {
+    margin: 48px 0;
+  }
+
+  h1 {
+    position: relative;
+    font-family: $primary-font;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 225px;
+      height: 225px;
+      position: absolute;
+      top: 0;
+      left: -250px;
+      background-image: url(../public/static/images/hero-circle.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: -50px;
+      right: -200px;
+      background-image: url(../public/static/images/hero-circle.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .hero-subtext {
+    text-align: center;
+      
+    span {
+      position: relative;
+      font-size: 40px;
+      font-weight: regular;
+      font-family: $primary-font;
+      line-height: 1;
+      text-align: center;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 325px;
+        height: 325px;
+        position: absolute;
+        top: -225px;
+        right: -400px;
+        background-image: url(../public/static/images/hero-circle.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
 }

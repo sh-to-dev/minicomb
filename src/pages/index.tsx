@@ -6,6 +6,7 @@ import {
 } from 'react-bootstrap';
 
 import Hero from "../components/misc/Hero";
+import FeaturePost from "../components/feature/FeaturePost";
 import FeatureTile from "../components/feature/FeatureTile";
 
 import "../index.scss";
@@ -23,6 +24,10 @@ const IndexPage = () => {
             </Col>
           </Row>
           <Row>
+            <Col>
+              <FeaturePost featureTitle="minicomb living." />
+            </Col>
+          </Row>
           <Row className="page-section">
             <Col md={4}>
               <FeatureTile imgName="feature1" title="Feature One" about="Feature Feature Feature"/>
@@ -33,7 +38,6 @@ const IndexPage = () => {
             <Col md={4}>
               <FeatureTile imgName="feature3" title="Feature Three" about="Feature Feature Feature"/>
             </Col>
-          </Row>
           </Row>
         </Container>
       </main>

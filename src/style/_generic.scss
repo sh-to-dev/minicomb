@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600;700&display=swap');
 
-$primary-font: 'Open Sans', sans-serif;
+$primary-font: 'Josefin Sans', sans-serif;
+$base-spacing: 8px;
 
 html {
   font-family: $primary-font;
@@ -11,6 +13,7 @@ body,
 main {
   background-color: $background;
   margin-bottom: 48px;
+  overflow-x: hidden;
 
   .page-section {
     margin-top: 75px;
