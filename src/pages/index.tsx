@@ -7,7 +7,8 @@ import {
 
 import Hero from "../components/misc/Hero";
 import FeaturePost from "../components/feature/FeaturePost";
-import FeatureTile from "../components/feature/FeatureTile";
+import GrabLastPosts from "../components/feature/GrabLastPost";
+import InfoBlock from "../components/misc/InfoBlock";
 
 import "../index.scss";
 import Layout from '../layout/Layout';
@@ -25,19 +26,32 @@ const IndexPage = () => {
           </Row>
           <Row>
             <Col>
-              <FeaturePost featureTitle="minicomb living." />
+              <h2>minicomb living.</h2>
             </Col>
           </Row>
-          <Row className="page-section">
-            <Col md={4}>
-              <FeatureTile imgName="feature1" title="Feature One" about="Feature Feature Feature"/>
+          <Row>
+            <Col>
+              <FeaturePost />
             </Col>
-            <Col md={4}>
-              <FeatureTile imgName="feature2" title="Feature Two" about="Feature Feature Feature"/>
+          </Row>
+          <GrabLastPosts />
+          <Row>
+            <Col>
+              <h2>minicomb is here to help.</h2>
             </Col>
-            <Col md={4}>
-              <FeatureTile imgName="feature3" title="Feature Three" about="Feature Feature Feature"/>
-            </Col>
+          </Row>
+          <Row>
+            <InfoBlock 
+              imgName="interior-design2" 
+              title="creating a world of elegantly functional living spaces."
+              content="minicomb is on a mission to inspire small living on any budget, without compromising design & functionality." 
+            />
+            <InfoBlock 
+              imgName="back-home2" 
+              title="a home decor vision you can actually achieve."
+              content="minicomb provides true-to-life product reviews & small home advice, so you can focus on what matters most." 
+              left
+            />
           </Row>
         </Container>
       </main>

@@ -10,7 +10,7 @@ const FeatureTile = ({imgName, title, about}: Props) => {
   return (
     <div className="feature-tile">
       <div className="feature-tile-img">
-        <img src={(`static/images/${imgName}.png`)} />
+        <img src={imgName} />
       </div>
       <div className="feature-tile-content">
         <span>{title}</span>

@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from "react";
+import grabAllPosts from "./GrabAllPosts";
 import {
   Container,
   Row,
   Col
 } from 'react-bootstrap';
 
-const PostTemplate = ({ data }) => {
-  const post = data.contentfulPost
+const PostTemplate = () => {
+  const post = grabAllPosts();
   return (
     <Container className="post">
         <Row className="single-post-page">
@@ -20,16 +20,5 @@ const PostTemplate = ({ data }) => {
     </Container>
   )
 }
-
-export const query = graphql`
-  query PostsQuery($id: String!) {
-    contentfulPost(id: { eq: $id }) {
-      heading
-      body {
-        body
-      }
-    }
-  }
-`
 
 export default PostTemplate;

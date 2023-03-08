@@ -1,0 +1,24 @@
+.info-block {
+  margin-bottom: 75px;
+
+  img {
+    width: 100%;
+  }
+
+  .info-block-copy {
+    font-family: $primary-font;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+  
+    .content {
+      font-size: 24px;
+    }
+  }
+}
